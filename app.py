@@ -48,8 +48,8 @@ def main():
     st.markdown(html_temp, unsafe_allow_html=True)
   
     HighBP = st.selectbox("Tem pressão alta?", ["Não", "Sim"])
-    HighChol = st.number_input("Tem colesterol alta?", ["Não", "Sim"])
-    CholCheck = st.number_input("Teve seu colesterol checado nos ultimos 5 anos?", ["Não", "Sim"])
+    HighChol = st.selectbox("Tem colesterol alta?", ["Não", "Sim"])
+    CholCheck = st.selectbox("Teve seu colesterol checado nos ultimos 5 anos?", ["Não", "Sim"])
     BMI = st.number_input("Seu IMC?", min_value=12, max_value=98, step=1)
     Smoker = st.selectbox("Você já fumou 5 pacotes de cigarro durante a vida?", ["Não", "Sim"])
     Stroke = st.selectbox("Você já teve um AVC?", ["Não", "Sim"])
